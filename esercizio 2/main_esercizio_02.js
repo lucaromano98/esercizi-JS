@@ -1,3 +1,6 @@
+// Crea 2 funzioni: 
+// 1) Deve generare un arrat con numeri casuali
+// 2) Deve sommare i numeri contenuti nell'array
 
 const generateArr = () => {
     let arr = []
@@ -11,16 +14,16 @@ const generateArr = () => {
 
 
 const sumArray = (array) => {
-    let somma = 0    
+    let sum = 0    
     array.forEach(numero =>{
-    somma = somma + numero
+    sum = somma + numero
     })
     return somma
 } 
 
 
-const numeri = generateArr()
-const somma = sumArray(numeri)
+const number = generateArr()
+const sum = sumArray(numeri)
 
 console.log(`I numeri sono ${numeri.join(", ")} e la somma tra loro e': ${somma}`);
 
